@@ -13,9 +13,19 @@ for j in range(97, 123):
     code.append(chr(j))
 for k in range(48, 58):  # 0-9
     code.append(chr(k))
-r_code = random.sample(code, 6)
+r_code = random.sample(code, 4)
 rr_code = "".join(r_code)
 print("随机验证码为:", rr_code)
+while True:
+    printIn=input("请输入随机验证码:")
+    if printIn==rr_code:
+        break
+
+
+
+
+
+
 
 # f = open("test.txt", "r")
 #f.write("Hello I'm hungry")
